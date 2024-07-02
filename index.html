@@ -9,11 +9,43 @@
             background-color:antiquewhite;
             font-family:Helvetica;
         }
-        span.white{
+        span.white {
             color:antiquewhite;
         }
-        h1{
+        h1 {
             text-align:center;
+        }
+        #color {
+            animation-name: example;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            width:100%;
+            height:20%;
+        }
+        @keyframes example {
+            0%   {background-color: red;}
+            16%  {background-color: orange;}
+            33%  {background-color: yellow;}
+            50%  {background-color: green;}
+            66%  {background-color: blue;}
+            84%  {background-color: purple;}
+            100% {background-color: red;}
+        }
+        .imy {
+            animation-name: example2;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-delay: 0.2s;
+            text-align:center;
+        }
+        @keyframes example2 {
+            0%   {color: red;}
+            16%  {color: orange;}
+            33%  {color: yellow;}
+            50%  {color: green;}
+            66%  {color: blue;}
+            84%  {color: purple;}
+            100% {color: red;}
         }
     </style>
 </head>
@@ -22,5 +54,6 @@
     <h1>Greetings, universe!</h1>
     <hr>
     <p>-><span class="white">miss ko na siya</span></p>
+    <div id="color"><p class="imy">miss ko na siya</p></div>
 </body>
 </html>
