@@ -7,15 +7,74 @@
     <style>
         body {
             background-color:antiquewhite;
-            font-family:Helvetica;
+            animation-name: example;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
         }
         span.white {
             color:antiquewhite;
         }
         h1 {
             text-align:center;
+            animation-name: example2;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-delay: -1s;
+            font-family:"Bahnschrift Condensed";
+            font-weight:lighter;
+            font-size:64px;
+            margin:auto;
+            width: 400px;
+            display:block;
+            border-width: 3px;
+            border-color:black;
+            border-style: solid;
+            border-radius: 10px;
+            background-color:#00000022;
         }
-        #color {
+        figcaption {
+            text-align:center;
+            animation-name: example2;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-delay: -1s;
+            font-family:"Bahnschrift";
+            font-weight:lighter;
+            font-size:16px;
+            margin:auto;
+            margin-top:10px;
+            display:block;
+        }
+        p {
+            text-align:center;
+            animation-name: example2;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-delay: -1s;
+            font-family:"Bahnschrift Condensed";
+            font-weight:lighter;
+            font-size:24px;
+            margin:auto;
+            width: 30%;
+            display:inline-block;
+            border-width: 3px;
+            border-color:black;
+            border-style: solid;
+            border-radius: 5px;
+            background-color:#00000022;
+        }
+        div {
+            display:inline;
+            padding:1.3%;
+            width:30%;
+            vertical-align:top;
+        }
+        
+        /* #color {
             animation-name: example;
             animation-duration: 2s;
             animation-timing-function: linear;
@@ -27,17 +86,17 @@
             height:30vw;
             padding:auto;
             position: relative;
-        }
+        } */
         @keyframes example {
-            0%   {background-color: red; transform:rotate(0deg); }
-            16%  {background-color: orange; transform:rotate(57.5984deg);}
-            33%  {background-color: yellow; transform:rotate(118.7967deg);}
-            50%  {background-color: green; transform:rotate(179.995deg);}
-            66%  {background-color: blue; transform:rotate(237.5934deg);}
-            84%  {background-color: purple; transform:rotate(302.3916deg);}
-            100% {background-color: red; transform:rotate(359.99deg);}
+            0%   {background-color: red; }
+            16%  {background-color: orange;}
+            33%  {background-color: yellow;}
+            50%  {background-color: green; }
+            66%  {background-color: blue; }
+            84%  {background-color: purple;}
+            100% {background-color: red; }
         }
-        .imy {
+        /* .imy {
             animation-name: example2;
             animation-duration: 2s;
             animation-iteration-count: infinite;
@@ -50,23 +109,52 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-        }
+        } */
         @keyframes example2 {
-            0%   {color: red;}
-            16%  {color: orange;}
-            33%  {color: yellow;}
-            50%  {color: green;}
-            66%  {color: blue;}
-            84%  {color: purple;}
-            100% {color: red;}
+            0%   {color: red;border-color: red;}
+            16%  {color: orange;border-color: orange;}
+            33%  {color: yellow;border-color: yellow;}
+            50%  {color: green;border-color: green;}
+            66%  {color: blue;border-color: blue;}
+            84%  {color: purple;border-color: purple;}
+            100% {color: red;border-color: red;}
+        }
+        img{
+            animation-name: example2;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-delay: -1s;
+            margin:auto;
+            margin-top:50px;
+            display:block;
+            border-width: 3px;
+            border-color:black;
+            border-style: solid;
+            border-radius: 10px;
+            background-color:#00000022;
+        }
+        span{
+            font-weight:bold;
+        }
+        span#imy{
+            font-weight:bold;
+            animation-name: example2;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
         }
     </style>
 </head>
 <body>
-    <hr>
-    <h1>Greetings, universe!</h1>
-    <hr>
-    <p>-><span class="white">miss ko na siya</span></p>
-    <div id="color"><p class="imy">miss ko na siya</p></div>
+    <h1>OSRIC PAMAN</h1>
+    <img src="image.gif" alt="Last brain cell">
+    <figcaption>This image represents the remaining population of neuron(s) in my brain</figcaption>
+    <br>
+    <div><p><span>FUN FACT</span><br>i got a 1.25 in math because of sir trex (i always get 1.00)<br><br><span id="imy">miss ko na siya</span></p></div>
+    <div><p><span>HOBBIES</span><br>music production, roblox game dev, japanese こんにちは<br>0.01平方メートルの空間をファンクショナルな家に変えましょう。リトル・ジョンさんは10年に働いていました。自分の家のために1億円を貯めりました。それでも、買えた空間は0.01平方メートルだけです。だから、このようにレインストールしました。最初に、ギャルバナイズド・スクウェアー・スティールを使いますから外にフレームを作ります。おばさんからネジを借りれます。エコ・フレンドリー・ウード・ヴェニアーとフレームをかぶせります。</p></div>
+    <div><p><span>INTERESTS</span><br>siya (game dev, astronomy)</p></div>
+    <!-- <p>-><span class="white">miss ko na siya</span></p> -->
+    <!-- <div id="color"><p class="imy">miss ko na siya</p></div> -->
 </body>
 </html>
